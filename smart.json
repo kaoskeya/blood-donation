@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "autoform": {},
+    "bootstrap3-less": {},
+    "accounts-admin-ui-bootstrap-3": {},
+    "bootstrap-select": {},
+    "iron-router": {},
+    "accounts-ui-bootstrap-3": {},
+    "toastr": {},
+    "highcharts-with-exporting": {}
+  }
+}

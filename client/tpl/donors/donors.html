@@ -1,0 +1,41 @@
+<template name="donors">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Donors <a href="{{ pathFor 'donorsAdd' }}" class="btn btn-primary pull-right">Add Donor</a></h1>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>DOB</th>
+							<th>Blood Group</th>
+							<th>Sex</th>
+							<th>Profession</th>
+						</tr>
+					</thead>
+					<tbody>
+					{{#each donors}}
+						<tr>
+							<td>{{ name }}</td>
+							<td>{{ dateFormat dob }}</td>
+							<td>{{ bloodgroup }}</td>
+							<td>{{ sex }}</td>
+							<td>{{ profession }}</td>
+						</tr>
+					{{/each}}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</template>
+<template name="donorsAdd">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Add a Donor</h1>
+				{{> quickForm collection="Donors" id="donorForm" type="insert"}}
+			</div>
+		</div>
+	</div>
+</template>
