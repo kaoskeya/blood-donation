@@ -101,7 +101,7 @@ Template.stats.rendered = function() {
 					text: 'Age wise Distribution'
 				},
 				xAxis: {
-					categories: ['< 18', '19 to 30', '31 to 40', '41 to 50', '51+'],
+					categories: ['< 25', '26 to 35', '36 to 45', '46 to 55', '56+'],
 					title: {
 						text: null
 					}
@@ -143,20 +143,20 @@ Template.stats.rendered = function() {
 				series: [{
 					name: 'Male',
 					data: [
-						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract(18, 'years').toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract('years', 30).toDate(), $lt: moment().subtract('years', 19).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract('years', 40).toDate(), $lt: moment().subtract('years', 31).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract('years', 50).toDate(), $lt: moment().subtract('years', 41).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'M', dob: { $lt: moment().subtract('years', 51).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract(25, 'years').toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract('years', 35).toDate(), $lt: moment().subtract('years', 26).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract('years', 45).toDate(), $lt: moment().subtract('years', 36).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'M', dob: { $gt: moment().subtract('years', 55).toDate(), $lt: moment().subtract('years', 46).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'M', dob: { $lt: moment().subtract('years', 56).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
 					]
 				}, {
 					name: 'Female',
 					data: [
-						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 18).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 30).toDate(), $lt: moment().subtract('years', 19).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 40).toDate(), $lt: moment().subtract('years', 31).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 50).toDate(), $lt: moment().subtract('years', 41).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
-						parseFloat(((Donors.find({'sex': 'F', dob: { $lt: moment().subtract('years', 51).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 25).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 35).toDate(), $lt: moment().subtract('years', 26).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 45).toDate(), $lt: moment().subtract('years', 36).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'F', dob: { $gt: moment().subtract('years', 55).toDate(), $lt: moment().subtract('years', 46).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
+						parseFloat(((Donors.find({'sex': 'F', dob: { $lt: moment().subtract('years', 56).toDate() }}).count() * 100) / Donors.find().count()).toFixed(2)),
 					]
 				}]
 			});
