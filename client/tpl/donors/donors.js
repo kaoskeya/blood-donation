@@ -29,3 +29,15 @@ Template.donorsAdd.rendered = function() {
 		}
 	});
 }
+Template.donors.events({
+	'click #downloadCSV': function(e) {
+		records = Donors.find().fetch();
+		csv = json2csv(
+			records, 
+			true, 
+			true
+		);
+		e.target.href = "data:text/csv;charset=utf-8," + escape(csv);
+		e.target.download = "donors.csv";
+	}
+})

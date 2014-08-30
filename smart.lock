@@ -9,13 +9,14 @@
       "iron-router": {},
       "accounts-ui-bootstrap-3": {},
       "toastr": {},
-      "highcharts-with-exporting": {}
+      "highcharts-with-exporting": {},
+      "json2csv": {}
     },
     "packages": {
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.16.1",
-        "commit": "34a447fd3a1b3164c78f865aabbac3ddc2d033fb"
+        "tag": "v0.17.1",
+        "commit": "a4688e7d77019a68ef43c2a303e905748beeb860"
       },
       "bootstrap3-less": {
         "git": "https://github.com/simison/bootstrap3-less",
@@ -39,8 +40,8 @@
       },
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.3.4",
-        "commit": "9f006ee48d869877d90d54ac75b54550a587df8f"
+        "tag": "v0.3.5",
+        "commit": "bbd0a8a46ae02526c2ebfee05fa8075d8d04a9ba"
       },
       "toastr": {
         "git": "https://github.com/chrismbeckett/meteor-toastr.git",
@@ -51,6 +52,11 @@
         "git": "https://github.com/wahyuaw/meteor-highcharts-with-exporting.git",
         "tag": "v0.1.1",
         "commit": "65a3b3f9bf35a520ddb3e23ef039322447c75125"
+      },
+      "json2csv": {
+        "git": "https://github.com/axwaxw/json2csv",
+        "tag": "v0.1.0",
+        "commit": "75d11564d845bab9c42c03c26529c4c3c2286849"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
